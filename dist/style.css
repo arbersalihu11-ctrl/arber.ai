@@ -81,3 +81,10 @@
 .experience-description{font-size:11px;line-height:1.7;color:#bfc1b7;margin:12px 0 0}
 @media(max-width:760px){.experience{grid-template-columns:1fr;gap:32px;margin-top:46px;padding-top:33px}.experience-heading h2{font-size:44px}.experience-heading p br{display:none}.experience-range{margin-top:18px}.experience-item{grid-template-columns:130px minmax(0,1fr);gap:22px}.experience-position h3{font-size:25px}.experience-role{font-size:12px}}
 @media(max-width:480px){.about-links .text-link{margin-top:0}.about-experience-link{font-size:11px;gap:18px}.experience-heading h2{font-size:44px}.experience-item{grid-template-columns:1fr;gap:12px;padding:23px 0}.experience-period{flex-direction:row;flex-wrap:wrap;align-items:center;gap:7px;font-size:9px}.experience-period>span[aria-hidden]{display:inline}.experience-status{margin:0 0 0 3px;padding:3px 6px;font-size:6px}.experience-position h3{font-size:27px}.experience-role{font-size:12px;line-height:1.7}.experience-type{font-size:9px}.experience-position{padding-right:18px}.experience-description{font-size:11px}}
+
+/* SVG icons retain the brand colors on platforms with emoji fonts. */
+.icon-star,.icon-play{display:block;flex-shrink:0;fill:currentColor}
+.icon-star{width:1em;height:1em}
+.icon-play{width:.89em;height:1em}
+.brand-star,.ticker-track b,.poster-star,.signature>span{display:inline-flex;align-items:center;justify-content:center}
+.signature>span{vertical-align:middle}
