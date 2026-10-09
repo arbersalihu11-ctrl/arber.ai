@@ -2,6 +2,10 @@
 
 Personal portfolio for Arbër Salihu: graphic design, content creation, AI visuals and professional experience.
 
+Live website: https://arber-ai.vercel.app
+
+GitHub: https://github.com/arbersalihu11-ctrl/arber.ai
+
 Plain HTML, CSS and JavaScript. No runtime dependencies, account secrets, database or build process are needed.
 
 ## Contents
@@ -28,9 +32,9 @@ Open http://127.0.0.1:4173.
 
 Import this GitHub repository into Vercel. The checked-in `vercel.json` selects the Other framework, skips installation/build and serves `dist/`.
 
-After the production domain is assigned, set `og:url` and `og:image` in `dist/index.html` to that domain and its `/assets/hero-art.webp` image. Site links, media and fonts use portable relative URLs.
+The sharing metadata uses the production domain above. Site links, media and fonts use portable relative URLs. Updates pushed to the `main` branch are deployed automatically by the connected Vercel project.
 
-Keep the repository private unless you intentionally choose public source. Vercel can deploy a private repository. Do not add credentials or `.env` files to Git.
+This repository contains the portable website and its media assets. Account credentials and environment files are excluded.
 
 ## Ownership
 
