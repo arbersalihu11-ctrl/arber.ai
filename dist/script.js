@@ -8,10 +8,10 @@ const projectData = {
     { file: 'brand-book-typography-v2.webp', label: 'Tipografia', alt: 'Sistemi tipografik i propozuar për DIGITAL HIVE', caption: 'BRAND BOOK / TIPOGRAFIA E PROPOZUAR' }
   ] },
   rinas: {"title": "Rinas’s Scope", "category": "LOGO & BRANDING / 02", "description": "Identitet vizual për një Creative Director, i ndërtuar rreth perspektivës, fokusit dhe drejtimit kreativ. Shkronja abstrakte R, horizonti dhe pika e kaltër formojnë një sistem të qartë vizual. Prezantimi origjinal përfshin konceptin, logon dhe aplikimet e identitetit.", "idea": "Një R abstrakte e lidhur me syrin dhe horizontin. Pika e kaltër shënon fokusin, ndërsa kompozimi shpreh perspektivën dhe drejtimin kreativ.", "direction": "E zezë, Rina Blue (#0099FF) dhe e bardhë, me tipografinë Biennale Medium. Koncepti, logoja dhe aplikimet paraqiten siç janë në prezantimin tim origjinal.", "assetRoot": "assets/rinas-scope", "galleryLabel": "Pamje nga prezantimi origjinal i Rinas’s Scope", "pdf": {"path": "assets/rinas-scope/rinas-scope-branding.pdf", "openLabel": "Hape prezantimin", "label": "9 FAQE / LOGO PROPOSAL"}, "credit": "Dizajnoi dhe ideoi: Arbër Salihu / arber.ai", "gallery": [{"file": "page-03.webp", "label": "Logoja", "alt": "Logoja kryesore për Rinas’s Scope — Creative Director.", "caption": "FAQJA 03 / LOGOJA · PREZANTIMI ORIGJINAL", "width": 1800, "height": 1273}, {"file": "page-02.webp", "label": "Koncepti", "alt": "Koncepti i logos, ngjyrat dhe tipografia nga prezantimi origjinal.", "caption": "FAQJA 02 / KONCEPTI · PREZANTIMI ORIGJINAL", "width": 1800, "height": 1273}, {"file": "page-04.webp", "label": "Print", "alt": "Aplikime të identitetit në materialet e printuara, nga PDF-ja origjinale.", "caption": "FAQJA 04 / PRINT · PREZANTIMI ORIGJINAL", "width": 1800, "height": 1273}, {"file": "page-05.webp", "label": "Stickers", "alt": "Stickers dhe elemente vizuale nga prezantimi origjinal.", "caption": "FAQJA 05 / STICKERS · PREZANTIMI ORIGJINAL", "width": 1800, "height": 1273}, {"file": "page-06.webp", "label": "Digital", "alt": "Aplikime në portfolio, social media dhe video, nga PDF-ja origjinale.", "caption": "FAQJA 06 / DIGITAL · PREZANTIMI ORIGJINAL", "width": 1800, "height": 1273}, {"file": "page-08.webp", "label": "Aplikimet", "alt": "Kartëvizitë, signage dhe aplikime të tjera nga PDF-ja origjinale.", "caption": "FAQJA 08 / APLIKIMET · PREZANTIMI ORIGJINAL", "width": 1800, "height": 1273}]},
-  forme: { title: 'FORMË', category: 'BRAND IDENTITY / 05', description: 'Një koncept identiteti vizual për një brend kreativ imagjinar. I ndërtuar rreth idesë që një formë e thjeshtë mund të mbajë shumë karakter.', idea: 'Një gjuhë e qartë vizuale për një studio kreative: tipografi e drejtpërdrejtë, forma gjeometrike dhe materiale që lidhen mes vete.', direction: 'Krem, portokalli dhe blu elektrike. Kontrasti e mban identitetin të freskët, ndërsa teksturat e letrës i japin ngrohtësi. Mockup-i është vizual konceptual i gjeneruar për këtë portfolio.' },
-  offframe: { title: 'OFF/FRAME', category: 'CONTENT & SOCIAL / 06', description: 'Një seri konceptuale për social media që e kthen një ide të vetme në një sistem postimesh me ritëm dhe personalitet.', idea: 'Me dalë jashtë kornizës së zakonshme. Një titull i fortë dhe një hierarki që lexohet shpejt, edhe në një ekran të vogël.', direction: 'Një poster vertikal 9:16, me portokalli energjike mbi blu elektrike. Formati është menduar për stories, cover-a të reels dhe postime të lidhura vizualisht.' },
-  type: { title: 'NË FORMË', category: 'POSTER & TYPOGRAPHY / 07', description: 'Një eksplorim tipografik ku vetë shkronjat bëhen kompozimi. Pak elemente, por një prani e fortë vizuale.', idea: 'Me e trajtu tipografinë si imazh. Madhësia, hapësira dhe ritmi i fjalëve ndërtojnë gjithë posterin.', direction: 'Blu e thellë mbi një bazë krem, shkronja të mbushura dhe konture, plus një pikë portokalli si theks. Një studim vizual, pa një klient real.' },
-  daynight: { title: 'DAY/NIGHT', category: 'SOCIAL ART DIRECTION / 08', description: 'Një koncept me dy gjendje: energjia e ditës dhe kurioziteti i natës. Të dyja flasin të njëjtën gjuhë vizuale.', idea: 'Një seri përmbajtjeje që ndryshon atmosferën, por ruan identitetin. E njëjta strukturë mund të adaptohet për mesazhe të ndryshme.', direction: 'Një çift kompozimesh me diell e hënë, forma minimale dhe kontrast krem–blu. I përshtatshëm si drejtim për një seri carousel-ash ose stories.' }
+  forme: { title: 'FORMË', category: 'BRAND IDENTITY / 03', description: 'Një koncept identiteti vizual për një brend kreativ imagjinar. I ndërtuar rreth idesë që një formë e thjeshtë mund të mbajë shumë karakter.', idea: 'Një gjuhë e qartë vizuale për një studio kreative: tipografi e drejtpërdrejtë, forma gjeometrike dhe materiale që lidhen mes vete.', direction: 'Krem, portokalli dhe blu elektrike. Kontrasti e mban identitetin të freskët, ndërsa teksturat e letrës i japin ngrohtësi. Mockup-i është vizual konceptual i gjeneruar për këtë portfolio.' },
+  offframe: { title: 'OFF/FRAME', category: 'CONTENT & SOCIAL / 04', description: 'Një seri konceptuale për social media që e kthen një ide të vetme në një sistem postimesh me ritëm dhe personalitet.', idea: 'Me dalë jashtë kornizës së zakonshme. Një titull i fortë dhe një hierarki që lexohet shpejt, edhe në një ekran të vogël.', direction: 'Një poster vertikal 9:16, me portokalli energjike mbi blu elektrike. Formati është menduar për stories, cover-a të reels dhe postime të lidhura vizualisht.' },
+  type: { title: 'NË FORMË', category: 'POSTER & TYPOGRAPHY / 05', description: 'Një eksplorim tipografik ku vetë shkronjat bëhen kompozimi. Pak elemente, por një prani e fortë vizuale.', idea: 'Me e trajtu tipografinë si imazh. Madhësia, hapësira dhe ritmi i fjalëve ndërtojnë gjithë posterin.', direction: 'Blu e thellë mbi një bazë krem, shkronja të mbushura dhe konture, plus një pikë portokalli si theks. Një studim vizual, pa një klient real.' },
+  daynight: { title: 'DAY/NIGHT', category: 'SOCIAL ART DIRECTION / 06', description: 'Një koncept me dy gjendje: energjia e ditës dhe kurioziteti i natës. Të dyja flasin të njëjtën gjuhë vizuale.', idea: 'Një seri përmbajtjeje që ndryshon atmosferën, por ruan identitetin. E njëjta strukturë mund të adaptohet për mesazhe të ndryshme.', direction: 'Një çift kompozimesh me diell e hënë, forma minimale dhe kontrast krem–blu. I përshtatshëm si drejtim për një seri carousel-ash ose stories.' }
 };
 
 const menuButton = document.querySelector('.menu-toggle');
@@ -167,6 +167,21 @@ function selectReel(key, index) {
   reelEmbed.replaceChildren(frame);
 }
 
+function openReel(key, id, trigger) {
+  if (window.portfolioFeed?.open({ collection: key, id, trigger })) return true;
+  const collection = reelCollections[key];
+  if (!collection) return false;
+  const index = collection.videos.findIndex(video => video.id === id);
+  if (index < 0) return false;
+  lastReelCard = trigger;
+  selectReel(key, index);
+  reelDialog.showModal();
+  document.body.classList.add('dialog-open');
+  reelDialog.scrollTop = 0;
+  reelClose.focus();
+  return true;
+}
+
 Object.entries(reelCollections).forEach(([key, collection]) => {
   collection.cards = [...collection.panel.querySelectorAll('[data-reel]')];
   updateReelPage(collection);
@@ -178,18 +193,14 @@ Object.entries(reelCollections).forEach(([key, collection]) => {
     collection.cards[firstNewIndex]?.scrollIntoView({ block: 'start', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
   });
   collection.cards.forEach(card => card.addEventListener('click', event => {
-    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    const index = collection.videos.findIndex(video => video.id === card.dataset.reel);
-    if (index === -1) return;
-    event.preventDefault();
-    lastReelCard = card;
-    selectReel(key, index);
-    reelDialog.showModal();
-    document.body.classList.add('dialog-open');
-    reelDialog.scrollTop = 0;
-    reelClose.focus();
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    if (openReel(key, card.dataset.reel, card)) event.preventDefault();
   }));
 });
+document.querySelectorAll('[data-featured-reel]').forEach(card => card.addEventListener('click', event => {
+  if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  if (openReel(card.dataset.collection, card.dataset.featuredReel, card)) event.preventDefault();
+}));
 reelPrevious.addEventListener('click', () => { if (selectedReel > 0) selectReel(selectedReelCollection, selectedReel - 1); });
 reelNext.addEventListener('click', () => { if (selectedReel < reelCollections[selectedReelCollection].videos.length - 1) selectReel(selectedReelCollection, selectedReel + 1); });
 reelClose.addEventListener('click', () => reelDialog.close());

@@ -16,118 +16,139 @@
   <link rel="stylesheet" href="style.css?v=20261009-svg-icons">
   <link rel="stylesheet" href="reels.css">
   <link rel="stylesheet" href="ai-gallery.css">
+  <link rel="stylesheet" href="portfolio.css?v=20261010-local">
+  <link rel="stylesheet" href="portfolio-secondary.css?v=20261010-local">
   <script src="koral-videos.js" defer></script>
   <script src="diverse-videos.js" defer></script>
-  <script src="script.js" defer></script>
+  <script src="script.js?v=20261010-cleanup" defer></script>
   <script src="ai-gallery-data.js" defer></script>
-  <script src="ai-gallery.js" defer></script>
+  <script src="ai-gallery.js?v=20261010-cleanup" defer></script>
+  <link rel="stylesheet" href="portfolio-motion.css?v=20261010-motion">
+  <script src="portfolio.js" defer></script>
+  <script src="portfolio-motion.js?v=20261010-cleanup" defer></script>
+  <link rel="stylesheet" href="reel-feed.css?v=20261010-feed">
+  <script src="reel-feed.js?v=20261010-feed" defer></script>
+  <link rel="stylesheet" href="portfolio-cleanup.css?v=20261010-cleanup">
 </head>
-<body>
+<body class="portfolio-edition">
   <a class="skip-link" href="#main">Kalo te përmbajtja</a>
   <header class="site-header">
     <a class="wordmark" href="#" aria-label="arber.ai — ballina">arber.ai<span class="brand-star" aria-hidden="true"><svg class="icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M39 0h22v29L82 8l16 16-21 21h23v22H72l20 20-16 16-26-26-26 26L8 87l21-20H0V45h28L7 24 23 8l16 21z"/></svg></span></a>
-    <span class="header-note">INDEPENDENT CREATIVE / PORTFOLIO</span>
+    <span class="header-note">ARBËR SALIHU / CREATIVE PORTFOLIO</span>
     <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Hap menynë"><span></span><span></span></button>
     <nav id="main-nav" aria-label="Navigimi kryesor">
-      <a href="#work">Punët <sup>08</sup></a>
-      <a href="#reels">Reels <sup>129</sup></a>
-      <a href="#ai-studio">AI Studio <sup>44</sup></a>
+      <a href="#work">Logo &amp; Branding</a>
+      <a href="#video-library">Video / Reels <sup>134</sup></a>
+      <a href="#ai-studio">AI Foto <sup>39</sup></a>
       <a href="#about">Rreth meje</a>
-      <a href="#services">Çka bëj</a>
       <a class="nav-contact" href="#contact">Të flasim <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-topline"><span><span class="status-dot"></span> DIZAJNER GRAFIK & CONTENT CREATOR</span><span class="edition">VOL. 01 / 2026</span></div>
-      <div class="hero-composition">
-        <div class="hero-type">
-          <h1 id="hero-title">IDE QË<br>BËJNË<br><span>ZHURMË.</span></h1>
-          <svg class="scribble" viewBox="0 0 370 35" aria-hidden="true"><path d="M5 21C74 3 261 0 364 13M20 30C106 18 243 12 326 21"/></svg>
-        </div>
-        <div class="hero-art">
-          <div class="art-photo"><img src="assets/hero-art.webp" alt="Skulpturë portokalli në formë ylli dhe një sferë kromi në sfond blu" width="1254" height="1254" fetchpriority="high"><span class="art-caption">A LITTLE DIFFERENT. A LOT OF CHARACTER.</span></div>
-          <div class="art-sticker" aria-hidden="true"><span>100%</span><span>CREATIVE<br>ENERGY</span><svg viewBox="0 0 40 40"><path d="M7 33L32 8M9 8h23v23"/></svg></div>
-          <span class="art-label">[ arber.ai / creative playground ]</span>
-          <span class="vertical-note" aria-hidden="true">DESIGN MEETS CONTENT —</span>
-        </div>
+    <section class="hero portfolio-hero" aria-labelledby="hero-title">
+      <div class="hero-topline"><span><span class="status-dot" aria-hidden="true"></span> ARBËR SALIHU / DESIGNER &amp; CONTENT CREATOR</span><span class="edition">PRISHTINË, KOSOVË · 2026</span></div>
+      <div class="portfolio-hero-layout">
+        <div class="portfolio-hero-copy"><span class="portfolio-eyebrow">A PERSONAL CREATIVE PORTFOLIO</span><h1 id="hero-title">DIZAJN.<br>CONTENT.<br><span>KARAKTER.</span></h1><p>Identitete vizuale, video dhe botë të imagjinuara me AI.<br>Një përzgjedhje e punëve të mia.</p><div class="portfolio-hero-actions"><a href="#work" class="button primary">Shiko portfolion <span aria-hidden="true">↘</span></a><a class="portfolio-text-link" href="#video-library">Shiko videot <span aria-hidden="true">↗</span></a></div></div>
+        <div class="portfolio-hero-gallery"><a class="hero-fashion-sheet" href="#ai-studio" aria-label="Eksploro punimet e mia Fashion AI"><img src="assets/ai-gallery/fashion/ai-07.webp" alt="Modelja me veshje skulpturore të zezë dhe të gjelbër në një botë futuriste të krijuar me AI" width="1376" height="768" fetchpriority="high"><span class="hero-sheet-tag">FASHION / AI EXPLORATION</span><span class="hero-sheet-arrow" aria-hidden="true">↗</span></a><a class="hero-identity-sheet" href="#work" aria-label="Shiko projektet e identitetit vizual"><img src="assets/digital-hive/brand-book-cover.webp" alt="Kopertina konceptuale e brand book-ut DIGITAL HIVE" width="1536" height="1024"><span>DIGITAL HIVE <b aria-hidden="true">↗</b><small>Logo origjinale · aplikim konceptual</small></span></a><span class="hero-gallery-note">IDENTITY. CONTENT. NEW PERSPECTIVES.</span><span class="hero-round-note" aria-hidden="true"><span>IDE</span><span>ME</span><span>KARAKTER.</span></span></div>
       </div>
-      <div class="hero-bottom">
-        <a href="#work" class="button primary">Eksploro punët <span aria-hidden="true">↙</span></a>
-        <p>Krijoj identitete vizuale dhe content që bie në sy.<br>Me ide të qarta. Me karakter. Me pak guxim.</p>
-        <a class="hero-instagram" href="https://www.instagram.com/arber_ai/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
-      </div>
+      <div class="portfolio-hero-footer"><span>GRAPHIC DESIGN &nbsp; / &nbsp; CONTENT &nbsp; / &nbsp; AI VISUALS</span><a href="#work">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
     </section>
 
     <div class="ticker" aria-label="Graphic design, content creation, visual identity, creative direction"><div class="ticker-track" aria-hidden="true"><span>GRAPHIC DESIGN</span><b><svg class="icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M39 0h22v29L82 8l16 16-21 21h23v22H72l20 20-16 16-26-26-26 26L8 87l21-20H0V45h28L7 24 23 8l16 21z"/></svg></b><span>CONTENT CREATION</span><b><svg class="icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M39 0h22v29L82 8l16 16-21 21h23v22H72l20 20-16 16-26-26-26 26L8 87l21-20H0V45h28L7 24 23 8l16 21z"/></svg></b><span>VISUAL IDENTITY</span><b><svg class="icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M39 0h22v29L82 8l16 16-21 21h23v22H72l20 20-16 16-26-26-26 26L8 87l21-20H0V45h28L7 24 23 8l16 21z"/></svg></b><span>IDE ME KARAKTER</span><b><svg class="icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M39 0h22v29L82 8l16 16-21 21h23v22H72l20 20-16 16-26-26-26 26L8 87l21-20H0V45h28L7 24 23 8l16 21z"/></svg></b><span>GRAPHIC DESIGN</span><b><svg class="icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M39 0h22v29L82 8l16 16-21 21h23v22H72l20 20-16 16-26-26-26 26L8 87l21-20H0V45h28L7 24 23 8l16 21z"/></svg></b><span>CONTENT CREATION</span><b><svg class="icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M39 0h22v29L82 8l16 16-21 21h23v22H72l20 20-16 16-26-26-26 26L8 87l21-20H0V45h28L7 24 23 8l16 21z"/></svg></b><span>VISUAL IDENTITY</span><b><svg class="icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M39 0h22v29L82 8l16 16-21 21h23v22H72l20 20-16 16-26-26-26 26L8 87l21-20H0V45h28L7 24 23 8l16 21z"/></svg></b><span>IDE ME KARAKTER</span><b><svg class="icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M39 0h22v29L82 8l16 16-21 21h23v22H72l20 20-16 16-26-26-26 26L8 87l21-20H0V45h28L7 24 23 8l16 21z"/></svg></b></div></div>
 
     <section class="work section-wrap" id="work" aria-labelledby="work-title">
-      <div class="section-kicker"><span>01 / CREATIVE WORK</span><span>NGA IDEJA TE PAMJA.</span></div>
-      <div class="section-intro reveal"><h2 id="work-title">PUNË ME<br>KARAKTER<span class="blue">.</span></h2><div class="intro-copy"><p>Identitete, kompozime dhe content.<br>Secila ide, me gjuhën e vet vizuale.</p><p class="concept-note"><span aria-hidden="true">↳</span> Logo origjinale dhe eksplorime vizuale.<br>Aplikimet konceptuale janë të shënuara.</p></div></div>
-      <div class="work-toolbar"><div class="filters" role="group" aria-label="Filtro projektet"><button class="filter active" data-filter="all" aria-pressed="true">Të gjitha <sup>08</sup></button><button class="filter" data-filter="branding" aria-pressed="false">Logo & Branding</button><button class="filter" data-filter="content" aria-pressed="false">Content</button><button class="filter" data-filter="design" aria-pressed="false">Graphic design</button></div><span class="toolbar-note">SELECTED WORK / 2026</span></div>
-      <div class="project-grid">
-        <article class="project project-featured reveal" data-category="branding">
+      <div class="section-kicker"><span>01 / LOGO &amp; BRANDING</span><span>VISUAL IDENTITY</span></div>
+      <div class="section-intro reveal"><h2 id="work-title">LOGO &amp;<br>BRANDING<span class="blue">.</span></h2><div class="intro-copy"><p>Identitete vizuale për brende.<br>Nga ideja te prezantimi final.</p><p class="concept-note"><span aria-hidden="true">↳</span> Logo origjinale dhe eksplorime vizuale.<br>Aplikimet konceptuale janë të shënuara.</p></div></div>
+      <div class="work-toolbar"><span class="toolbar-note">02 LOGO ORIGJINALE / 04 KONCEPTE</span></div>
+      <div class="project-grid selected-project-grid"><article class="project project-featured reveal" data-category="branding">
           <button class="project-button" data-project="hive" aria-label="Shiko DIGITAL HIVE: logo, brand book dhe mockups">
             <div class="project-visual hive-visual"><img src="assets/digital-hive/stationery.webp" alt="DIGITAL HIVE: logoja e Arbërit në një propozim vizual për kartëvizita dhe stationery" width="1536" height="1024" loading="lazy"><span class="project-index">01 / LOGO ORIGJINALE</span><span class="hive-project-label">CREATIVE AGENCY / VISUAL IDENTITY</span><span class="project-open" aria-hidden="true">↗</span></div>
             <div class="project-caption"><div><h3>DIGITAL HIVE</h3><p>Logoja ime. Një botë vizuale rreth saj.</p></div><span>LOGO & BRANDING · BRAND BOOK</span></div>
           </button>
           <p class="hive-project-credit">Logo: arber.ai <span aria-hidden="true">/</span> Brand book dhe mockups: aplikime konceptuale</p>
         </article>
-        <article class="project project-featured reveal" data-category="branding">
+<article class="project project-featured reveal" data-category="branding">
           <button class="project-button" data-project="rinas" aria-label="Shiko Rinas’s Scope: logo dhe prezantimi origjinal">
             <div class="project-visual rinas-visual"><img src="assets/rinas-scope/page-03.webp" alt="Logoja Rinas’s Scope nga prezantimi origjinal i arber.ai" width="1800" height="1273" loading="lazy"><span class="project-index">02 / LOGO PROPOSAL</span><span class="hive-project-label">CREATIVE DIRECTOR / VISUAL IDENTITY</span><span class="project-open" aria-hidden="true">↗</span></div>
             <div class="project-caption"><div><h3>RINAS’S SCOPE</h3><p>Perspektivë. Fokus. Drejtim kreativ.</p></div><span>LOGO &amp; BRANDING</span></div>
           </button>
           <p class="hive-project-credit">Dizajn: arber.ai <span aria-hidden="true">/</span> Prezantimi origjinal</p>
         </article>
-        <article class="project project-featured reveal" data-category="content">
-          <a class="project-button" href="#reels" data-collection-link="koral" aria-label="Shiko 90 videot për Koral Secrets Kosova">
-            <div class="project-visual koral-visual"><span class="project-index">03 / VIDEO CONTENT</span><div class="koral-project-type"><span>CONTENT NË LËVIZJE</span><h3>KORAL<br>SECRETS<span>KOSOVA.</span></h3><span class="koral-project-count">90 VIDEOT / NJË KOLEKSION <b aria-hidden="true">↘</b></span></div><div class="koral-project-film" aria-hidden="true"><div class="koral-film-frame"><img src="assets/koral-secrets/DTI0xbwCJOi.jpg" alt="" width="720" height="1280" loading="lazy"><span class="reel-play"><svg class="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" aria-hidden="true" focusable="false"><path d="M1 1l14 8-14 8z"/></svg></span></div><span class="koral-film-note">PRESS PLAY. KEEP WATCHING.</span></div><span class="project-open" aria-hidden="true">↗</span></div>
-            <div class="project-caption"><div><h3>KORAL SECRETS KOSOVA</h3><p>Content që jeton përtej një frame-i.</p></div><span>VIDEO CONTENT · INSTAGRAM</span></div>
-          </a>
-          <p class="hive-project-credit">Content: arber.ai <span aria-hidden="true">/</span> Koleksioni i videove të krijuara ndër vite</p>
-        </article>
-        <article class="project project-featured reveal" data-category="content">
-          <a class="project-button" href="#diverse" data-collection-link="diverse" aria-label="Shiko 39 videot për Diverse Academy">
-            <div class="project-visual koral-visual diverse-visual"><span class="project-index">04 / VIDEO &amp; AI CONTENT</span><div class="koral-project-type"><span>IDE. VIDEO. AI.</span><h3>DIVERSE<span>ACADEMY.</span></h3><span class="koral-project-count">39 VIDEOT / NJË KOLEKSION <b aria-hidden="true">↘</b></span></div><div class="koral-project-film" aria-hidden="true"><div class="koral-film-frame"><img src="assets/diverse-academy/DdyJ_IcMsPB.jpg" alt="" width="720" height="1280" loading="lazy"><span class="reel-play"><svg class="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" aria-hidden="true" focusable="false"><path d="M1 1l14 8-14 8z"/></svg></span></div><span class="koral-film-note">VIDEO 01 / AI CONTENT</span></div><span class="project-open" aria-hidden="true">↗</span></div>
-            <div class="project-caption"><div><h3>DIVERSE ACADEMY</h3><p>Ide dhe video, me një tjetër perspektivë.</p></div><span>VIDEO &amp; AI CONTENT · INSTAGRAM</span></div>
-          </a>
-          <p class="hive-project-credit">Content: arber.ai <span aria-hidden="true">/</span> Videoja e parë: AI content</p>
-        </article>
-        <article class="project reveal" data-category="branding">
+
+</div>
+<details class="portfolio-archive concept-archive" data-archive="concepts"><summary><span class="archive-number">+04</span><span class="archive-name">Eksplorime &amp; koncepte<small>FORMË · OFF/FRAME · NË FORMË · DAY/NIGHT</small></span><span class="archive-toggle" aria-hidden="true">+</span></summary><div class="concept-archive-body"><p class="portfolio-concept-note">Studime vizuale dhe aplikime konceptuale. Çdo projekt e ka të shënuar origjinën.</p><div class="project-grid concept-grid"><article class="project reveal" data-category="branding">
           <button class="project-button" data-project="forme" aria-label="Shiko konceptin FORMË">
-            <div class="project-visual forme-visual"><img src="assets/forme-brand.webp" alt="Koncept identiteti FORMË me materiale të shtypura krem, portokalli dhe blu" width="1536" height="1024" loading="lazy"><span class="project-index">05 / KONCEPT</span><span class="project-open" aria-hidden="true">↗</span></div>
+            <div class="project-visual forme-visual"><img src="assets/forme-brand.webp" alt="Koncept identiteti FORMË me materiale të shtypura krem, portokalli dhe blu" width="1536" height="1024" loading="lazy"><span class="project-index">03 / KONCEPT</span><span class="project-open" aria-hidden="true">↗</span></div>
             <div class="project-caption"><div><h3>FORMË</h3><p>Një identitet që merr formë.</p></div><span>BRAND IDENTITY</span></div>
           </button>
         </article>
-        <article class="project offset reveal" data-category="content">
+<article class="project offset reveal" data-category="content">
           <button class="project-button" data-project="offframe" aria-label="Shiko konceptin OFF/FRAME">
-            <div class="project-visual off-frame-visual"><span class="project-index">06 / KONCEPT</span><span class="offframe-label">CREATIVE CULTURE / SOCIAL SERIES</span><div class="content-poster"><span class="poster-top">arber.ai <b>↗</b></span><div class="poster-big">OFF<br><span>/FRAME</span></div><div class="poster-star" aria-hidden="true"><svg class="icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M39 0h22v29L82 8l16 16-21 21h23v22H72l20 20-16 16-26-26-26 26L8 87l21-20H0V45h28L7 24 23 8l16 21z"/></svg></div><div class="poster-bottom">BREAK THE SCROLL.<br>MAKE SOMETHING GOOD.</div></div><div class="poster-side"><span>9:16</span><div></div><span>FEEL THE<br>FRAME.</span></div><span class="project-open" aria-hidden="true">↗</span></div>
+            <div class="project-visual off-frame-visual"><span class="project-index">04 / KONCEPT</span><span class="offframe-label">CREATIVE CULTURE / SOCIAL SERIES</span><div class="content-poster"><span class="poster-top">arber.ai <b>↗</b></span><div class="poster-big">OFF<br><span>/FRAME</span></div><div class="poster-star" aria-hidden="true"><svg class="icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M39 0h22v29L82 8l16 16-21 21h23v22H72l20 20-16 16-26-26-26 26L8 87l21-20H0V45h28L7 24 23 8l16 21z"/></svg></div><div class="poster-bottom">BREAK THE SCROLL.<br>MAKE SOMETHING GOOD.</div></div><div class="poster-side"><span>9:16</span><div></div><span>FEEL THE<br>FRAME.</span></div><span class="project-open" aria-hidden="true">↗</span></div>
             <div class="project-caption"><div><h3>OFF/FRAME</h3><p>Content që e ndal scroll-in.</p></div><span>CONTENT & SOCIAL</span></div>
           </button>
         </article>
-        <article class="project reveal" data-category="design">
+<article class="project reveal" data-category="design">
           <button class="project-button" data-project="type" aria-label="Shiko konceptin Në formë">
-            <div class="project-visual type-visual"><span class="project-index">07 / KONCEPT</span><div class="type-top"><span>TYPE EXPLORATIONS</span><span>© arber.ai</span></div><div class="type-poster"><span>NË</span><span class="type-outline">FORMË</span><span>GJITHMONË<span class="type-dot">●</span></span></div><span class="type-small">LET THE TYPE<br>DO THE TALKING.</span><span class="project-open" aria-hidden="true">↗</span></div>
+            <div class="project-visual type-visual"><span class="project-index">05 / KONCEPT</span><div class="type-top"><span>TYPE EXPLORATIONS</span><span>© arber.ai</span></div><div class="type-poster"><span>NË</span><span class="type-outline">FORMË</span><span>GJITHMONË<span class="type-dot">●</span></span></div><span class="type-small">LET THE TYPE<br>DO THE TALKING.</span><span class="project-open" aria-hidden="true">↗</span></div>
             <div class="project-caption"><div><h3>NË FORMË</h3><p>Shkronja që thonë më shumë.</p></div><span>POSTER & TYPOGRAPHY</span></div>
           </button>
         </article>
-        <article class="project offset reveal" data-category="content">
+<article class="project offset reveal" data-category="content">
           <button class="project-button" data-project="daynight" aria-label="Shiko konceptin DAY/NIGHT">
-            <div class="project-visual daynight-visual"><span class="project-index">08 / KONCEPT</span><div class="daynight-top">ONE IDEA. TWO MOODS. <span>↗</span></div><div class="daynight-panels"><div class="day-panel"><span class="dn-tiny">06:00 / CREATE</span><div class="sun-shape" aria-hidden="true"></div><span class="dn-word">DAY.</span><span class="dn-label">FRESH IDEAS.<br>FULL ENERGY.</span></div><div class="night-panel"><span class="dn-tiny">00:00 / EXPLORE</span><div class="moon-shape" aria-hidden="true"></div><span class="dn-word">NIGHT.</span><span class="dn-label">NEW PERSPECTIVES.<br>SAME CURIOSITY.</span></div></div><span class="project-open" aria-hidden="true">↗</span></div>
+            <div class="project-visual daynight-visual"><span class="project-index">06 / KONCEPT</span><div class="daynight-top">ONE IDEA. TWO MOODS. <span>↗</span></div><div class="daynight-panels"><div class="day-panel"><span class="dn-tiny">06:00 / CREATE</span><div class="sun-shape" aria-hidden="true"></div><span class="dn-word">DAY.</span><span class="dn-label">FRESH IDEAS.<br>FULL ENERGY.</span></div><div class="night-panel"><span class="dn-tiny">00:00 / EXPLORE</span><div class="moon-shape" aria-hidden="true"></div><span class="dn-word">NIGHT.</span><span class="dn-label">NEW PERSPECTIVES.<br>SAME CURIOSITY.</span></div></div><span class="project-open" aria-hidden="true">↗</span></div>
             <div class="project-caption"><div><h3>DAY/NIGHT</h3><p>Një gjuhë. Dy energji.</p></div><span>SOCIAL ART DIRECTION</span></div>
           </button>
-        </article>
-      </div>
-      <p id="filter-status" class="sr-only" role="status" aria-live="polite">8 projekte</p>
+        </article></div></div></details>
+<p id="filter-status" class="sr-only" role="status" aria-live="polite">6 punime të dizajnit</p>
       <div class="work-footer"><span>IDE TË VOGLA. PAMJE TË MËDHA.</span><a href="https://www.instagram.com/arber_ai/" target="_blank" rel="noopener noreferrer">Më shumë në Instagram <span aria-hidden="true">↗</span></a></div>
     </section>
 
-    <section class="reels" id="reels" aria-labelledby="reels-title">
+    <section class="portfolio-motion" id="video-library" aria-labelledby="films-title">
+      <div class="section-wrap"><span id="films" class="section-anchor" aria-hidden="true"></span>
+        <div class="section-kicker"><span>02 / VIDEO PORTFOLIO</span><span>134 VIDEO / 3 KOLEKSIONE</span></div>
+        <div class="motion-heading reveal">
+          <div><span class="portfolio-eyebrow">REELS PËR BRENDE &amp; FILMA AI</span><h2 id="films-title">VIDEO<br>&amp; REELS<span>.</span></h2></div>
+          <p>Hape një koleksion dhe vazhdo me swipe.<br>Vetëm videot e mia, në një vend.</p>
+        </div>
+        <div class="motion-stage">
+          <article class="motion-film motion-film--lead reveal">
+            <div class="motion-screen">
+              <video class="motion-preview" poster="assets/ai-gallery/fashion/ai-29-thumb.webp" data-src="assets/ai-gallery/fashion/ai-29.mp4" width="1284" height="716" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+              <a class="motion-open" href="assets/ai-gallery/fashion/ai-29.mp4" data-ai-featured="ai-29" aria-label="Shiko Bio couture — film i krijuar me AI">
+                <span class="motion-badge">AI / FASHION FILM</span><span class="motion-play"><svg class="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" aria-hidden="true" focusable="false"><path d="M1 1l14 8-14 8z"/></svg></span><span class="motion-open-label">Hap AI Films <span aria-hidden="true">↗</span></span>
+              </a>
+              <button class="motion-preview-toggle" type="button" aria-label="Luaj preview pa zë"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" aria-hidden="true" focusable="false"><path d="M3 2h4v14H3zm6 0h4v14H9z"/></svg><span>Luaj preview</span></button>
+              <span class="motion-time" aria-hidden="true">00:05</span><div class="motion-progress" aria-hidden="true"><span></span></div>
+            </div>
+            <div class="motion-caption"><div><h3>AI FILMS</h3><p><span class="motion-lead-title">Bio couture</span> · Fashion &amp; AI</p></div><span>5 FILMA</span></div>
+            <div class="motion-film-selector" role="group" aria-label="Zgjedh filmin fashion"><button type="button" data-film-choice="ai-29" aria-pressed="true">BIO COUTURE</button><button type="button" data-film-choice="ai-31" aria-pressed="false">RIBBON COUTURE</button></div>
+          </article>
+          <article class="motion-film motion-film--social reveal">
+            <div class="motion-screen">
+              <img src="assets/koral-secrets/DTI0xbwCJOi.jpg" alt="Pamje nga reel i Koral Secrets Kosova, realizuar nga Arbër Salihu" width="360" height="640" loading="lazy" decoding="async">
+              <a class="motion-open" href="https://www.instagram.com/p/DTI0xbwCJOi/" data-featured-reel="DTI0xbwCJOi" data-collection="koral" aria-label="Shiko reel për Koral Secrets Kosova">
+                <span class="motion-badge">INSTAGRAM / REEL</span><span class="motion-play"><svg class="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" aria-hidden="true" focusable="false"><path d="M1 1l14 8-14 8z"/></svg></span><span class="motion-open-label">Hap koleksionin <span aria-hidden="true">↗</span></span>
+              </a>
+            </div>
+            <div class="motion-caption"><div><h3>KORAL SECRETS KOSOVA</h3><p>Beauty · Social content</p></div><span>90 REELS</span></div>
+          </article>
+          <article class="motion-film motion-film--social reveal">
+            <div class="motion-screen">
+              <img src="assets/diverse-academy/DdyJ_IcMsPB.jpg" alt="Pamje nga reel AI për Diverse Academy, realizuar nga Arbër Salihu" width="360" height="640" loading="lazy" decoding="async">
+              <a class="motion-open" href="https://www.instagram.com/p/DdyJ_IcMsPB/" data-featured-reel="DdyJ_IcMsPB" data-collection="diverse" aria-label="Shiko reel AI për Diverse Academy">
+                <span class="motion-badge">INSTAGRAM / AI REEL</span><span class="motion-play"><svg class="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" aria-hidden="true" focusable="false"><path d="M1 1l14 8-14 8z"/></svg></span><span class="motion-open-label">Hap koleksionin <span aria-hidden="true">↗</span></span>
+              </a>
+            </div>
+            <div class="motion-caption"><div><h3>DIVERSE ACADEMY</h3><p>Fashion · AI content</p></div><span>39 REELS</span></div>
+          </article>
+        </div>
+
+<details class="portfolio-archive" data-archive="reels"><summary><span class="archive-number">129</span><span class="archive-name">Galeria e reels<small>Koral Secrets Kosova / Diverse Academy</small></span><span class="archive-toggle" aria-hidden="true">+</span></summary><div class="archive-content"><section class="reels" id="reels" aria-labelledby="reels-title">
       <div class="section-wrap">
-        <div class="section-kicker"><span>02 / CONTENT IN MOTION</span><span>CREATED BY arber.ai</span></div>
-        <div class="reels-intro"><h2 id="reels-title">CONTENT<br>NË LËVIZJE<span>.</span></h2><div class="reels-intro-copy"><span class="reels-count" aria-label="129 video">129<span>VIDEOS<br>& COUNTING</span></span><p>Nga një ide te një video.<br>Koral Secrets dhe Diverse Academy.<br>Dy koleksione të content-it tim.</p></div></div>
+        <div class="section-kicker"><span>INSTAGRAM / THUMBNAIL GALLERY</span><span>CREATED BY arber.ai</span></div>
+        <div class="reels-intro"><h2 id="reels-title">GALERIA<br>E REELS<span>.</span></h2><div class="reels-intro-copy"><span class="reels-count" aria-label="129 video">129<span>VIDEOS<br>& COUNTING</span></span><p>Shiko kopertinat ose hape një video<br>për të vazhduar në shikuesin me swipe.</p></div></div>
         <nav class="collection-switcher" aria-label="Zgjedh koleksionin e videove">
           <a href="#reels" data-collection-link="koral" aria-controls="koral-collection">Koral Secrets Kosova <span>90</span></a>
           <a href="#diverse" data-collection-link="diverse" aria-controls="diverse">Diverse Academy <span>39</span></a>
@@ -668,26 +689,22 @@
           <div class="reels-pagination"><p id="diverse-count" role="status" aria-live="polite">39 nga 39 video</p><button class="reels-more" id="diverse-more" aria-controls="diverse-grid" hidden>Shfaq më shumë <span aria-hidden="true">↓</span></button><span class="reels-pagination-note">CONTENT: arber.ai</span></div>
         </div>
       </div>
+    </section><div class="archive-close-row"><button type="button" data-close-archive="reels">Mbyll koleksionin <span aria-hidden="true">↑</span></button></div></div></details>
+</div>
     </section>
 
+
     <section class="ai-studio section-wrap" id="ai-studio" aria-labelledby="ai-title">
-      <div class="section-kicker"><span>03 / AI STUDIO</span><span>IMAGINED BY arber.ai</span></div>
-      <div class="ai-intro"><h2 id="ai-title">IMAGJINATË<br>NË FRAME<span>.</span></h2><div class="ai-intro-copy"><span class="ai-eyebrow">AI-GENERATED VISUALS</span><p>Fashion, botë të reja dhe ide vizuale.<br>Eksplorime të mia me AI, në foto dhe video.</p><span class="ai-total">44 PUNIME / 2 KOLEKSIONE</span></div></div>
+      <div class="section-kicker"><span>03 / AI PHOTOGRAPHY</span><span>IMAGINED BY arber.ai</span></div>
+      <div class="ai-intro"><h2 id="ai-title">FOTO AI<span>.</span></h2><div class="ai-intro-copy"><span class="ai-eyebrow">AI-GENERATED VISUALS</span><p>Fashion, botë të reja dhe ide vizuale.<br>Një galeri e fotografive të mia të krijuara me AI.</p><span class="ai-total">39 FOTO / 2 KOLEKSIONE</span></div></div>
       <div class="ai-collection-switcher" role="group" aria-label="Zgjedh koleksionin AI">
-        <button type="button" data-ai-collection-filter="fashion" aria-pressed="true" aria-controls="ai-grid"><span class="ai-collection-number">01</span><span class="ai-collection-name">FASHION AI<small>Editorials, styling &amp; fashion films</small></span><span class="ai-collection-total" id="ai-fashion-total">33</span><span aria-hidden="true">↘</span></button>
-        <button type="button" data-ai-collection-filter="explorations" aria-pressed="false" aria-controls="ai-grid"><span class="ai-collection-number">02</span><span class="ai-collection-name">AI EXPLORATIONS<small>Concept art, illustration &amp; motion</small></span><span class="ai-collection-total" id="ai-explorations-total">11</span><span aria-hidden="true">↘</span></button>
+        <button type="button" data-ai-collection-filter="fashion" aria-pressed="true" aria-controls="ai-grid"><span class="ai-collection-number">01</span><span class="ai-collection-name">FASHION AI<small>Editorials &amp; styling</small></span><span class="ai-collection-total" id="ai-fashion-total">29</span><span aria-hidden="true">↘</span></button>
+        <button type="button" data-ai-collection-filter="explorations" aria-pressed="false" aria-controls="ai-grid"><span class="ai-collection-number">02</span><span class="ai-collection-name">AI EXPLORATIONS<small>Concept art &amp; illustration</small></span><span class="ai-collection-total" id="ai-explorations-total">10</span><span aria-hidden="true">↘</span></button>
       </div>
-      <div class="ai-toolbar"><div class="ai-kind-filters" role="group" aria-label="Filtro sipas formatit"><button type="button" data-ai-kind-filter="all" aria-pressed="true">Të gjitha <sup data-ai-filter-count></sup></button><button type="button" data-ai-kind-filter="image" aria-pressed="false">Foto <sup data-ai-filter-count></sup></button><button type="button" data-ai-kind-filter="video" aria-pressed="false">Video <sup data-ai-filter-count></sup></button></div><span class="ai-toolbar-note">AI CONTENT / CREATED BY arber.ai</span></div>
       <div class="ai-grid" id="ai-grid" aria-labelledby="ai-title">
         <!-- AI-CARDS-START -->
-          <a class="ai-card ai-card-wide" data-ai="ai-29" data-ai-collection="fashion" data-ai-kind="video" href="assets/ai-gallery/fashion/ai-29.mp4" target="_blank" rel="noopener noreferrer" aria-label="Shiko Bio couture / Film — video e krijuar me AI">
-            <div class="ai-card-media"><img src="assets/ai-gallery/fashion/ai-29-thumb.webp" alt="Film AI me veshje të zezë dhe forma organike të gjelbra në një pyll futurist." width="1284" height="716" loading="lazy" decoding="async"><span class="ai-card-kind">AI / VIDEO</span><span class="ai-card-play" aria-hidden="true"><svg class="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" aria-hidden="true" focusable="false"><path d="M1 1l14 8-14 8z"/></svg></span><span class="ai-card-duration" aria-hidden="true">0:05</span></div>
-            <div class="ai-card-caption"><div><h3>Bio couture / Film</h3><p>Fashion film</p></div><span class="ai-card-arrow" aria-hidden="true">↗</span></div>
-          </a>
-          <a class="ai-card ai-card-wide" data-ai="ai-31" data-ai-collection="fashion" data-ai-kind="video" href="assets/ai-gallery/fashion/ai-31.mp4" target="_blank" rel="noopener noreferrer" aria-label="Shiko Ribbon couture / Film — video e krijuar me AI">
-            <div class="ai-card-media"><img src="assets/ai-gallery/fashion/ai-31-thumb.webp" alt="Film AI me veshje avangarde dhe shirita rozë në një peizazh shkretëtire." width="1284" height="716" loading="lazy" decoding="async"><span class="ai-card-kind">AI / VIDEO</span><span class="ai-card-play" aria-hidden="true"><svg class="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" aria-hidden="true" focusable="false"><path d="M1 1l14 8-14 8z"/></svg></span><span class="ai-card-duration" aria-hidden="true">0:05</span></div>
-            <div class="ai-card-caption"><div><h3>Ribbon couture / Film</h3><p>Fashion film</p></div><span class="ai-card-arrow" aria-hidden="true">↗</span></div>
-          </a>
+
+
           <a class="ai-card" data-ai="ai-02" data-ai-collection="fashion" data-ai-kind="image" href="assets/ai-gallery/fashion/ai-02.webp" target="_blank" rel="noopener noreferrer" aria-label="Shiko Sunlit silhouette — foto e krijuar me AI">
             <div class="ai-card-media"><img src="assets/ai-gallery/fashion/ai-02-thumb.webp" alt="Modele me fustan të gjatë portokalli në një oborr të bardhë mesdhetar." width="1024" height="1024" loading="lazy" decoding="async"><span class="ai-card-kind">AI / FOTO</span></div>
             <div class="ai-card-caption"><div><h3>Sunlit silhouette</h3><p>Fashion editorial</p></div><span class="ai-card-arrow" aria-hidden="true">↗</span></div>
@@ -704,10 +721,7 @@
             <div class="ai-card-media"><img src="assets/ai-gallery/fashion/ai-22-thumb.webp" alt="Model me bluzë të zezë dhe pantallona ulliri, duke ecur në një rrugë me drita neon." width="2000" height="2000" loading="lazy" decoding="async"><span class="ai-card-kind">AI / FOTO</span></div>
             <div class="ai-card-caption"><div><h3>Neon street / Motion study</h3><p>Streetwear</p></div><span class="ai-card-arrow" aria-hidden="true">↗</span></div>
           </a>
-          <a class="ai-card ai-card-wide" data-ai="ai-03" data-ai-collection="fashion" data-ai-kind="video" href="assets/ai-gallery/fashion/ai-03.mp4" target="_blank" rel="noopener noreferrer" aria-label="Shiko Studio silhouette / Film — video e krijuar me AI">
-            <div class="ai-card-media"><img src="assets/ai-gallery/fashion/ai-03-thumb.webp" alt="Film AI me një modele në veshje të zezë dhe bordo me prerje, në ambient studioje." width="1284" height="716" loading="lazy" decoding="async"><span class="ai-card-kind">AI / VIDEO</span><span class="ai-card-play" aria-hidden="true"><svg class="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" aria-hidden="true" focusable="false"><path d="M1 1l14 8-14 8z"/></svg></span><span class="ai-card-duration" aria-hidden="true">0:05</span></div>
-            <div class="ai-card-caption"><div><h3>Studio silhouette / Film</h3><p>Fashion film</p></div><span class="ai-card-arrow" aria-hidden="true">↗</span></div>
-          </a>
+
           <a class="ai-card ai-card-wide" data-ai="ai-28" data-ai-collection="fashion" data-ai-kind="image" href="assets/ai-gallery/fashion/ai-28.webp" target="_blank" rel="noopener noreferrer" aria-label="Shiko Code couture / World — foto e krijuar me AI">
             <div class="ai-card-media"><img src="assets/ai-gallery/fashion/ai-28-thumb.webp" alt="Modele me veshje të zezë avangarde dhe shami të gjelbër në një korridor futurist." width="1376" height="768" loading="lazy" decoding="async"><span class="ai-card-kind">AI / FOTO</span></div>
             <div class="ai-card-caption"><div><h3>Code couture / World</h3><p>Concept couture</p></div><span class="ai-card-arrow" aria-hidden="true">↗</span></div>
@@ -732,10 +746,7 @@
             <div class="ai-card-media"><img src="assets/ai-gallery/fashion/ai-14-thumb.webp" alt="Modele me veshje futuriste dhe shirita rozë në një peizazh shkretëtire." width="1376" height="768" loading="lazy" decoding="async"><span class="ai-card-kind">AI / FOTO</span></div>
             <div class="ai-card-caption"><div><h3>Ribbon couture / Desert</h3><p>Concept couture</p></div><span class="ai-card-arrow" aria-hidden="true">↗</span></div>
           </a>
-          <a class="ai-card ai-card-wide" data-ai="ai-20" data-ai-collection="fashion" data-ai-kind="video" href="assets/ai-gallery/fashion/ai-20.mp4" target="_blank" rel="noopener noreferrer" aria-label="Shiko Ribbon couture / Silhouette film — video e krijuar me AI">
-            <div class="ai-card-media"><img src="assets/ai-gallery/fashion/ai-20-thumb.webp" alt="Film AI me një modele në veshje avangarde rozë dhe të zezë, në një peizazh shkretëtire." width="1284" height="716" loading="lazy" decoding="async"><span class="ai-card-kind">AI / VIDEO</span><span class="ai-card-play" aria-hidden="true"><svg class="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" aria-hidden="true" focusable="false"><path d="M1 1l14 8-14 8z"/></svg></span><span class="ai-card-duration" aria-hidden="true">0:05</span></div>
-            <div class="ai-card-caption"><div><h3>Ribbon couture / Silhouette film</h3><p>Fashion film</p></div><span class="ai-card-arrow" aria-hidden="true">↗</span></div>
-          </a>
+
           <a class="ai-card" data-ai="ai-34" data-ai-collection="fashion" data-ai-kind="image" href="assets/ai-gallery/fashion/ai-34.webp" target="_blank" rel="noopener noreferrer" aria-label="Shiko Code couture / Sculpture — foto e krijuar me AI">
             <div class="ai-card-media"><img src="assets/ai-gallery/fashion/ai-34-thumb.webp" alt="Modele me veshje futuriste të gjelbër dhe të zezë, kapele të rrumbullakët dhe detaje që zgjaten nga krahët." width="752" height="1344" loading="lazy" decoding="async"><span class="ai-card-kind">AI / FOTO</span></div>
             <div class="ai-card-caption"><div><h3>Code couture / Sculpture</h3><p>Concept couture</p></div><span class="ai-card-arrow" aria-hidden="true">↗</span></div>
@@ -812,10 +823,7 @@
             <div class="ai-card-media"><img src="assets/ai-gallery/fashion/ai-30-thumb.webp" alt="Portret i një modeli me këmishë të kaltër dhe syze të zeza nën dritë të fortë." width="1024" height="1024" loading="lazy" decoding="async"><span class="ai-card-kind">AI / FOTO</span></div>
             <div class="ai-card-caption"><div><h3>Light &amp; shade</h3><p>Fashion editorial</p></div><span class="ai-card-arrow" aria-hidden="true">↗</span></div>
           </a>
-          <a class="ai-card" data-ai="ai-04" data-ai-collection="explorations" data-ai-kind="video" href="assets/ai-gallery/explorations/ai-04.mp4" target="_blank" rel="noopener noreferrer" aria-label="Shiko Through the lens / Film — video e krijuar me AI">
-            <div class="ai-card-media"><img src="assets/ai-gallery/explorations/ai-04-thumb.webp" alt="Video AI me portret përmes një lenteje rrethore, me dorën që afrohet drejt kamerës." width="768" height="768" loading="lazy" decoding="async"><span class="ai-card-kind">AI / VIDEO</span><span class="ai-card-play" aria-hidden="true"><svg class="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" aria-hidden="true" focusable="false"><path d="M1 1l14 8-14 8z"/></svg></span><span class="ai-card-duration" aria-hidden="true">0:10</span></div>
-            <div class="ai-card-caption"><div><h3>Through the lens / Film</h3><p>Experimental portrait</p></div><span class="ai-card-arrow" aria-hidden="true">↗</span></div>
-          </a>
+
           <a class="ai-card" data-ai="ai-27" data-ai-collection="explorations" data-ai-kind="image" href="assets/ai-gallery/explorations/ai-27.webp" target="_blank" rel="noopener noreferrer" aria-label="Shiko City lens — foto e krijuar me AI">
             <div class="ai-card-media"><img src="assets/ai-gallery/explorations/ai-27-thumb.webp" alt="Portret me lente të gjerë i një burri me duart drejt kamerës, mes dritave dhe tabelave të një qyteti natën." width="1024" height="1024" loading="lazy" decoding="async"><span class="ai-card-kind">AI / FOTO</span></div>
             <div class="ai-card-caption"><div><h3>City lens</h3><p>Experimental portrait</p></div><span class="ai-card-arrow" aria-hidden="true">↗</span></div>
@@ -862,15 +870,14 @@
       <div class="ai-pagination"><p id="ai-count" role="status" aria-live="polite"></p><button type="button" id="ai-more" hidden>Shfaq më shumë <span aria-hidden="true">↓</span></button></div>
       <p class="ai-credit">Ideimi dhe krijimi me AI: arber.ai</p>
     </section>
-
-    <section class="about" id="about" aria-labelledby="about-title">
+<section class="about" id="about" aria-labelledby="about-title">
       <div class="section-wrap">
-        <div class="section-kicker"><span>04 / THE PERSON BEHIND THE PIXELS</span><span>HELLO, I'M ARBËR.</span></div>
+        <div class="section-kicker"><span>04 / THE PERSON BEHIND THE WORK</span><span>HELLO, I'M ARBËR.</span></div>
         <div class="about-grid">
-          <div class="about-art reveal" aria-hidden="true"><span class="about-art-top">A CREATIVE MIND AT WORK.</span><span class="about-name">arber<br>.ai</span><svg class="about-asterisk" viewBox="0 0 100 100"><path d="M39 0h22v29L82 8l16 16-21 21h23v22H72l20 20-16 16-26-26-26 26L8 87l21-20H0V45h28L7 24 23 8l16 21z"/></svg><span class="about-art-bottom">DESIGN IS A WAY OF SEEING.</span></div>
+          <figure class="about-art about-portrait reveal"><img src="assets/arber-portrait.png" alt="Arbër Salihu" width="528" height="590" loading="lazy" decoding="async"><figcaption><span>ARBËR SALIHU</span><span>PRISHTINË, KOSOVË</span></figcaption></figure>
           <div class="about-copy reveal">
             <span class="eyebrow">ARBËR SALIHU / arber.ai</span>
-            <h2 id="about-title">SY PËR DETAJE.<br>MENDJE PËR<br><span>IDETË.</span></h2>
+            <h2 id="about-title">ARBËR SALIHU.<br><span>ME IDE &amp; KARAKTER.</span></h2>
             <p>Jam Arbër Salihu, dizajner grafik, content creator dhe profesionist i marketingut me bazë në Prishtinë. Aktualisht jam Marketing Director te Golden Taxi Prishtina dhe London Taxi Prishtina.</p>
             <p>Përvoja ime shtrihet nga dizajni grafik e printi te koordinimi i marketingut dhe mësimdhënia asistuese në CLO3D. Me arber.ai krijoj identitete vizuale, video për Koral Secrets Kosova dhe Diverse Academy, si dhe koncepte me AI në fashion, foto e video.</p>
             <dl class="about-details">
@@ -886,7 +893,7 @@
           </div>
         </div>
 
-        <section class="experience" id="experience" aria-labelledby="experience-title">
+        <details class="portfolio-cv"><summary><span>Përvoja profesionale</span><span>2017 — SOT <b aria-hidden="true">+</b></span></summary><section class="experience" id="experience" aria-labelledby="experience-title">
           <div class="experience-heading">
             <span class="eyebrow">CV / PËRVOJA PROFESIONALE</span>
             <h2 id="experience-title">NGA PRINTI<br>TE <span>MARKETINGU.</span></h2>
@@ -931,20 +938,20 @@
                 <div class="experience-position"><span class="experience-index" aria-hidden="true">09</span><h3>My Print</h3><p class="experience-role">Graphic Designer &amp; Print Officer</p><span class="experience-type">Orar i plotë</span></div>
               </li>
           </ol>
-        </section>
+        </section></details>
       </div>
     </section>
 
     <section class="services section-wrap" id="services" aria-labelledby="services-title">
       <div class="section-kicker"><span>05 / WHAT I BRING TO THE TABLE</span><span>LET'S MAKE IT HAPPEN.</span></div>
-      <div class="services-layout"><div class="services-intro reveal"><h2 id="services-title">NGA “E KAM<br>NI IDE” TE<br>“KJO ËSHTË.”</h2><p>Me një drejtim të qartë dhe një pamje<br>që i shkon brendit tënd.</p><span class="services-arrow" aria-hidden="true">↘</span></div><div class="service-list reveal">
+      <div class="services-layout"><div class="services-intro reveal"><h2 id="services-title">ÇKA SJELL<br>NË PROJEKT.</h2><p>Me një drejtim të qartë dhe një pamje<br>që i shkon brendit tënd.</p><span class="services-arrow" aria-hidden="true">↘</span></div><div class="service-list reveal">
         <details class="service" open><summary><span class="service-number">01</span><h3>Dizajn grafik</h3><span class="service-toggle" aria-hidden="true">+</span></summary><div class="service-body"><p>Një identitet që e njeh menjëherë. Një sistem vizual që funksionon prej logos te çdo pikë kontakti.</p><div class="service-tags"><span>Brand identity</span><span>Logo</span><span>Postera</span><span>Materiale për print</span></div></div></details>
         <details class="service"><summary><span class="service-number">02</span><h3>Content creation</h3><span class="service-toggle" aria-hidden="true">+</span></summary><div class="service-body"><p>Përmbajtje me ide, ritëm dhe një zë të dallueshëm. Prej konceptit dhe storyboard-it te pamja finale.</p><div class="service-tags"><span>Reels</span><span>Social content</span><span>Creative concepts</span><span>Storytelling</span></div></div></details>
         <details class="service"><summary><span class="service-number">03</span><h3>Social media design</h3><span class="service-toggle" aria-hidden="true">+</span></summary><div class="service-body"><p>Një feed që duket si ti. Formate dhe kompozime që e mbajnë brendin të lidhur, pa u bërë të përsëritshme.</p><div class="service-tags"><span>Feed design</span><span>Carousels</span><span>Stories</span><span>Campaign visuals</span></div></div></details>
       </div></div>
     </section>
 
-    <section class="contact" id="contact" aria-labelledby="contact-title"><div class="section-wrap"><div class="section-kicker"><span>06 / YOUR NEXT GOOD IDEA</span><span>STARTS WITH A HELLO.</span></div><div class="contact-top"><span class="contact-eyebrow">KE NI IDE? TA JAPIM FORMË.</span><svg class="contact-star" viewBox="0 0 100 100" aria-hidden="true"><path d="M39 0h22v29L82 8l16 16-21 21h23v22H72l20 20-16 16-26-26-26 26L8 87l21-20H0V45h28L7 24 23 8l16 21z"/></svg></div><h2 id="contact-title">LE TË KRIJOJMË<br>DIÇKA <span>NDRYSHE.</span></h2><div class="contact-bottom"><p>Për projekte, bashkëpunime<br>ose thjesht një përshëndetje.</p><a class="contact-cta" href="https://www.instagram.com/arber_ai/" target="_blank" rel="noopener noreferrer">Më shkruaj në Instagram <span aria-hidden="true">↗</span></a></div><div class="contact-brand"><a href="https://www.instagram.com/arber_ai/" target="_blank" rel="noopener noreferrer">@arber_ai <span aria-hidden="true">↗</span></a><span>GOOD DESIGN STARTS A CONVERSATION.</span></div></div></section>
+    <section class="contact" id="contact" aria-labelledby="contact-title"><div class="section-wrap"><div class="section-kicker"><span>06 / YOUR NEXT GOOD IDEA</span><span>STARTS WITH A HELLO.</span></div><div class="contact-top"><span class="contact-eyebrow">PËR PROJEKTE &amp; BASHKËPUNIME</span><svg class="contact-star" viewBox="0 0 100 100" aria-hidden="true"><path d="M39 0h22v29L82 8l16 16-21 21h23v22H72l20 20-16 16-26-26-26 26L8 87l21-20H0V45h28L7 24 23 8l16 21z"/></svg></div><h2 id="contact-title">KE NI IDE?<br><span>TA JAPIM FORMË.</span></h2><div class="contact-bottom"><p>Për projekte, bashkëpunime<br>ose thjesht një përshëndetje.</p><a class="contact-cta" href="https://www.instagram.com/arber_ai/" target="_blank" rel="noopener noreferrer">Më shkruaj në Instagram <span aria-hidden="true">↗</span></a></div><div class="contact-brand"><a href="https://www.instagram.com/arber_ai/" target="_blank" rel="noopener noreferrer">@arber_ai <span aria-hidden="true">↗</span></a><span>GOOD DESIGN STARTS A CONVERSATION.</span></div></div></section>
   </main>
   <footer class="site-footer"><a class="wordmark" href="#" aria-label="arber.ai — kthehu lart">arber.ai<span class="brand-star" aria-hidden="true"><svg class="icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M39 0h22v29L82 8l16 16-21 21h23v22H72l20 20-16 16-26-26-26 26L8 87l21-20H0V45h28L7 24 23 8l16 21z"/></svg></span></a><span>© 2026 arber.ai · Me ide. Me karakter.</span><a href="#">Kthehu lart <span aria-hidden="true">↑</span></a></footer>
 
@@ -957,9 +964,19 @@
     <p class="reel-embed-note">Nëse videoja nuk hapet këtu, mundesh me e parë në Instagram.</p>
   </dialog>
   <dialog class="ai-dialog" id="ai-dialog" aria-labelledby="ai-dialog-title">
-    <div class="ai-dialog-toolbar"><span>AI STUDIO / arber.ai</span><button type="button" id="ai-close" aria-label="Mbyll pamjen AI">Mbyll <span aria-hidden="true">×</span></button></div>
+    <div class="ai-dialog-toolbar"><span>FOTO AI / arber.ai</span><button type="button" id="ai-close" aria-label="Mbyll foton AI">Mbyll <span aria-hidden="true">×</span></button></div>
     <div id="ai-dialog-media" class="ai-dialog-media"></div>
     <div class="ai-dialog-footer"><div class="ai-dialog-heading"><span id="ai-dialog-category"></span><h2 id="ai-dialog-title">AI Studio</h2></div><div class="ai-dialog-actions"><div class="ai-navigation" role="group" aria-label="Navigo punimet AI"><span id="ai-position"></span><button type="button" id="ai-previous" aria-label="Punimi paraprak">←</button><button type="button" id="ai-next" aria-label="Punimi tjetër">→</button></div><a id="ai-original" href="#ai-studio" target="_blank" rel="noopener noreferrer">Hape pamjen <span aria-hidden="true">↗</span></a></div></div>
+  </dialog>
+  <dialog class="reel-feed" id="reel-feed" aria-labelledby="feed-title">
+    <header class="feed-toolbar"><span class="feed-brand">arber.ai</span><h2 id="feed-title">VIDEO PORTFOLIO</h2><button type="button" id="feed-close" aria-label="Mbyll shikuesin e videove">Mbyll <span aria-hidden="true">×</span></button></header>
+    <nav class="feed-collections" aria-label="Koleksionet e videove"><button type="button" data-feed-collection="koral" aria-pressed="true">Koral Secrets <span>90</span></button><button type="button" data-feed-collection="diverse" aria-pressed="false">Diverse Academy <span>39</span></button><button type="button" data-feed-collection="ai" aria-pressed="false">AI Films <span>5</span></button></nav>
+    <div class="feed-layout">
+      <div class="feed-track" id="feed-track" tabindex="0" role="region" aria-label="Videot e portfolios. Rrëshqit për të kaluar te videoja tjetër."></div>
+      <aside class="feed-controls" aria-label="Kalo te videoja tjetër"><span id="feed-position">01 / 90</span><button type="button" id="feed-previous" aria-label="Videoja paraprake"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 15 7-7 7 7"/></svg></button><button type="button" id="feed-next" aria-label="Videoja tjetër"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 9 7 7 7-7"/></svg></button><div class="feed-swipe-rail" data-feed-swipe aria-hidden="true"><svg viewBox="0 0 24 32" focusable="false"><path d="M12 4v24m-6-6 6 6 6-6"/></svg><span>Rrëshqit<br>këtu</span></div></aside>
+    </div>
+    <footer class="feed-footer"><span id="feed-instruction">Rrëshqit në shiritin anash për kalim.</span><a id="feed-view-grid" href="#reels">Shiko të gjitha <span aria-hidden="true">↗</span></a></footer>
+    <p class="sr-only" id="feed-status" role="status" aria-live="polite"></p>
   </dialog>
 </body>
 </html>

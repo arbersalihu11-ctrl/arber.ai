@@ -10,13 +10,13 @@ Plain HTML, CSS and JavaScript. No runtime dependencies, account secrets, databa
 
 ## Contents
 
-- 8 creative projects, including DIGITAL HIVE and Rinas’s Scope
-- 129 Instagram videos across Koral Secrets Kosova and Diverse Academy
-- 44 AI works: 33 Fashion AI and 11 AI Explorations
+- 2 original branding projects (DIGITAL HIVE and Rinas’s Scope) and 4 visual concepts
+- One video portfolio: 90 Koral Secrets reels, 39 Diverse Academy reels and 5 AI films
+- A separate photography gallery: 29 Fashion AI photos and 10 AI Explorations
 - About and 9 professional positions
 - Local photos, fonts, PDF brand books and 5 AI videos
 
-Instagram videos use official embedded posts and include direct Instagram links if playback is unavailable.
+Video collections open in a full-screen viewer with keyboard controls, arrows and a vertical swipe rail. Instagram videos use official embedded posts on demand and include direct Instagram links if playback is unavailable. AI films play from the original local MP4s. Only the selected video is loaded; previous playback clears when navigating or closing. The optional Reels thumbnail gallery sits within the same video section.
 
 ## Preview locally
 

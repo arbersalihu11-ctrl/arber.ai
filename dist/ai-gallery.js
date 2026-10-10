@@ -1,12 +1,11 @@
-/* User-created AI work. Only the selected video is loaded, without autoplay. */
+/* User-created AI photos. Films open in the shared video portfolio. */
 (() => {
   const gallery = document.querySelector('#ai-grid');
   if (!gallery || typeof aiGallery === 'undefined' || !Array.isArray(aiGallery)) return;
 
-  const cards = [...gallery.querySelectorAll('[data-ai]')];
   const items = new Map(aiGallery.map(item => [String(item.id), item]));
+  const cards = [...gallery.querySelectorAll('[data-ai]')].filter(card => items.get(card.dataset.ai)?.kind === 'image');
   const collectionButtons = [...document.querySelectorAll('[data-ai-collection-filter]')];
-  const kindButtons = [...document.querySelectorAll('[data-ai-kind-filter]')];
   const count = document.querySelector('#ai-count');
   const more = document.querySelector('#ai-more');
   const empty = document.querySelector('#ai-empty');
@@ -18,7 +17,6 @@
   const original = document.querySelector('#ai-original');
   const batch = 8;
   let collection = 'fashion';
-  let kind = 'all';
   let visible = batch;
   let sequence = [];
   let selected = 0;
@@ -27,39 +25,30 @@
   const collectionName = key => key === 'fashion' ? 'Fashion AI' : 'AI Explorations';
   const matchingCards = () => cards.filter(card => {
     const item = items.get(card.dataset.ai);
-    return item && item.collection === collection && (kind === 'all' || item.kind === kind);
+    return item && item.collection === collection;
   });
 
   function updatePage() {
     const matching = matchingCards();
     const shown = new Set(matching.slice(0, visible));
     cards.forEach(card => { card.hidden = !shown.has(card); });
-    collectionButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.aiCollectionFilter === collection)));
-    kindButtons.forEach(button => {
-      const filter = button.dataset.aiKindFilter;
-      button.setAttribute('aria-pressed', String(filter === kind));
-      const label = button.querySelector('[data-ai-filter-count]');
-      if (label) label.textContent = aiGallery.filter(item => item.collection === collection && (filter === 'all' || item.kind === filter)).length;
+    collectionButtons.forEach(button => {
+      const key = button.dataset.aiCollectionFilter;
+      button.setAttribute('aria-pressed', String(key === collection));
+      const total = button.querySelector('.ai-collection-total');
+      if (total) total.textContent = cards.filter(card => items.get(card.dataset.ai).collection === key).length;
     });
-    const noun = kind === 'image' ? 'foto' : kind === 'video' ? 'video' : 'punime';
-    if (count) count.textContent = `${Math.min(visible, matching.length)} nga ${matching.length} ${noun} · ${collectionName(collection)}`;
+    if (count) count.textContent = `${Math.min(visible, matching.length)} nga ${matching.length} foto · ${collectionName(collection)}`;
     if (more) more.hidden = visible >= matching.length;
     if (empty) {
       empty.hidden = matching.length > 0;
-      if (!matching.length) empty.textContent = kind === 'video' ? 'Ky koleksion për momentin përmban vetëm foto. Zgjedh “Fotot” për t’i parë.' : 'Nuk ka punime në këtë filtër. Zgjedh një format tjetër.';
+      if (!matching.length) empty.textContent = 'Nuk ka foto në këtë koleksion.';
     }
   }
 
   collectionButtons.forEach(button => button.addEventListener('click', () => {
     if (!['fashion', 'explorations'].includes(button.dataset.aiCollectionFilter)) return;
     collection = button.dataset.aiCollectionFilter;
-    kind = 'all';
-    visible = batch;
-    updatePage();
-  }));
-  kindButtons.forEach(button => button.addEventListener('click', () => {
-    if (!['all', 'image', 'video'].includes(button.dataset.aiKindFilter)) return;
-    kind = button.dataset.aiKindFilter;
     visible = batch;
     updatePage();
   }));
@@ -73,60 +62,57 @@
   updatePage();
   if (location.hash === '#ai-studio') requestAnimationFrame(() => document.querySelector('#ai-studio').scrollIntoView({ block: 'start', behavior: 'instant' }));
 
+  document.querySelectorAll('[data-ai-featured]').forEach(trigger => trigger.addEventListener('click', event => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const id = trigger.dataset.aiFeatured;
+    if (items.get(id)?.kind !== 'video') return;
+    if (window.portfolioFeed?.open({ collection: 'ai', id, trigger })) event.preventDefault();
+  }));
+
   if (!dialog || !media || !close || !previous || !next || !original) return;
 
   function clearMedia() {
-    media.querySelectorAll('video').forEach(video => {
-      video.pause();
-      video.removeAttribute('src');
-      video.querySelectorAll('source').forEach(source => source.removeAttribute('src'));
-      video.load();
-    });
     media.replaceChildren();
   }
 
   function selectItem(index) {
-    const item = items.get(sequence[index]?.dataset.ai);
-    if (!item) return;
+    const item = items.get(sequence[index]);
+    if (!item || item.kind !== 'image') return;
     selected = index;
     clearMedia();
-    const element = document.createElement(item.kind === 'video' ? 'video' : 'img');
+    const element = document.createElement('img');
     element.width = item.width;
     element.height = item.height;
-    if (item.kind === 'video') {
-      element.controls = true;
-      element.playsInline = true;
-      element.preload = 'metadata';
-      element.poster = item.thumb;
-      element.setAttribute('aria-label', `${item.title} · Video e krijuar me AI nga arber.ai`);
-    } else {
-      element.alt = item.alt || item.title;
-      element.decoding = 'async';
-    }
+    element.alt = item.alt || item.title;
+    element.decoding = 'async';
     element.src = item.src;
     media.append(element);
     document.querySelector('#ai-dialog-title').textContent = item.title;
-    document.querySelector('#ai-dialog-category').textContent = `${collectionName(item.collection)} / ${item.category} / ${item.kind === 'video' ? 'VIDEO' : 'FOTO'}`;
+    document.querySelector('#ai-dialog-category').textContent = `${collectionName(item.collection)} / ${item.category} / FOTO`;
     document.querySelector('#ai-position').textContent = `${String(index + 1).padStart(2, '0')} / ${sequence.length}`;
     original.href = item.src;
-    original.setAttribute('aria-label', `Hape ${item.kind === 'video' ? 'videon' : 'foton'} “${item.title}” në një tab të ri`);
+    original.setAttribute('aria-label', `Hape foton “${item.title}” në një tab të ri`);
     previous.disabled = index === 0;
     next.disabled = index === sequence.length - 1;
   }
 
-  cards.forEach(card => card.addEventListener('click', event => {
-    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    if (!items.has(card.dataset.ai)) return;
-    event.preventDefault();
-    lastCard = card;
-    sequence = matchingCards();
-    const index = sequence.indexOf(card);
-    if (index < 0) return;
+  function openItem(id, trigger, ids) {
+    if (items.get(id)?.kind !== 'image') return false;
+    sequence = ids;
+    const index = sequence.indexOf(id);
+    if (index < 0) return false;
+    lastCard = trigger;
     selectItem(index);
     dialog.showModal();
     document.body.classList.add('dialog-open');
     dialog.scrollTop = 0;
     close.focus();
+    return true;
+  }
+
+  cards.forEach(card => card.addEventListener('click', event => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    if (openItem(card.dataset.ai, card, matchingCards().map(card => card.dataset.ai))) event.preventDefault();
   }));
 
   previous.addEventListener('click', () => { if (selected > 0) selectItem(selected - 1); });
@@ -139,7 +125,7 @@
   });
   dialog.addEventListener('keydown', event => {
     if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
-    if (event.target.closest('video, input, textarea, select, [contenteditable="true"]')) return;
+    if (event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
     if (event.key === 'ArrowLeft' && selected > 0) {
       event.preventDefault();
       selectItem(selected - 1);
