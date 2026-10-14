@@ -7,6 +7,7 @@
   const nextButton = document.getElementById('feed-next');
   const position = document.getElementById('feed-position');
   const title = document.getElementById('feed-title');
+  const collaboration = document.getElementById('feed-collaboration');
   const status = document.getElementById('feed-status');
   const gridLink = document.getElementById('feed-view-grid');
   const tabs = [...document.querySelectorAll('[data-feed-collection]')];
@@ -15,6 +16,7 @@
   const collections = {
     koral: {
       name: 'Koral Secrets Kosova',
+      collaboration: 'Gravitas Media',
       grid: '#reels',
       items: typeof koralVideos === 'undefined' ? [] : koralVideos.map(item => ({
         ...item, kind: 'instagram', thumb: `assets/koral-secrets/${item.id}.jpg`,
@@ -113,6 +115,7 @@
     const index = Math.max(0, selected);
     if (position) position.textContent = `${String(index + 1).padStart(2, '0')} / ${data.items.length}`;
     if (title) title.textContent = data.name;
+    if (collaboration) collaboration.hidden = !data.collaboration;
     previousButton.disabled = index <= 0;
     nextButton.disabled = index >= data.items.length - 1;
     if (gridLink) gridLink.href = data.grid;

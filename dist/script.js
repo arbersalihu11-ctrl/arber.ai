@@ -152,6 +152,8 @@ function selectReel(key, index) {
   const video = collection.videos[index];
   const number = String(index + 1).padStart(2, '0');
   document.querySelector('#reel-dialog-brand').textContent = `${collection.name.toUpperCase()} / arber.ai`;
+  const collaboration = document.getElementById('reel-collaboration');
+  if (collaboration) collaboration.hidden = key !== 'koral';
   document.querySelector('#reel-dialog-title').textContent = `VIDEO ${number}`;
   document.querySelector('#reel-dialog-ai').hidden = !video.ai;
   document.querySelector('#reel-position').textContent = `${number} / ${collection.videos.length}`;

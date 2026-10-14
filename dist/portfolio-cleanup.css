@@ -145,3 +145,39 @@ body.portfolio-edition #ai-more:hover {
   body.portfolio-edition .ai-toolbar > span { font-size: 7px; letter-spacing: .3px; }
   body.portfolio-edition .ai-toolbar > .toolbar-note { max-width: 150px; }
 }
+
+/* Koral Secrets: collaboration credited once per collection view. */
+.collab-credit {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 100%;
+  color: #c4c8bd;
+  text-align: left;
+}
+.collab-credit[hidden] { display: none; }
+.collab-credit > span { font-size: 11px; line-height: 1.5; }
+.collab-credit strong { font-weight: 600; color: var(--paper); }
+.collab-credit > img {
+  display: block;
+  flex: 0 0 auto;
+  width: 120px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 614 / 168;
+  object-fit: contain;
+  border-radius: 4px;
+}
+.motion-film > .collab-credit {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #ffffff28;
+}
+.reels-collection .collab-credit { margin-top: 15px; }
+.reel-dialog > .collab-credit { margin: 14px 22px; color: var(--muted); }
+.reel-dialog > .collab-credit strong { color: var(--ink); }
+@media (max-width: 760px) {
+  .motion-film > .collab-credit { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .motion-film > .collab-credit > img { width: 110px; }
+  .motion-film > .collab-credit > span { font-size: 10px; }
+}

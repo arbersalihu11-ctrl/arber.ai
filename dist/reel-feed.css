@@ -581,3 +581,27 @@
   .feed-collections > button { transition: none; transform: none; }
   .feed-track { scroll-behavior: auto; }
 }
+
+/* Collaboration stays in the toolbar while the selected reel changes. */
+.feed-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  text-align: center;
+}
+.feed-heading #feed-title { margin: 0; }
+.reel-feed .feed-collaboration {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
+}
+.reel-feed .feed-collaboration > img { width: 88px; }
+.reel-feed .feed-collaboration > span { font-size: 10px; line-height: 1.4; }
+@media (max-width: 760px) {
+  .feed-heading { gap: 5px; }
+  .reel-feed .feed-collaboration { gap: 4px; }
+  .reel-feed .feed-collaboration > img { width: 76px; }
+  .reel-feed .feed-collaboration > span { font-size: 9px; }
+}
